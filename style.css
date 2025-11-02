@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+header {
+    background: linear-gradient(45deg, #4a00e0, #8e2de2);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.event-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+}
+
+.event-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    margin: 10px 0;
+}
+
+.event-card button {
+    background: #4a00e0;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.event-card button:hover {
+    background: #3700b3;
+}
+
+.booking-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 25px;
+    width: 320px;
+    border-radius: 15px;
+    display: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.close-btn {
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ✅ Responsive Fixes */
+@media(max-width: 480px) {
+    header h1 { font-size: 22px; }
+    .booking-form { width: 90%; }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management & Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="images/pic1.jpg" alt="My Photo">
+
+</head>
+<body>
+
+    <header>
+        <h1>Event Management System</h1>
+        <p>Book your favourite event in seconds!</p>
+    </header>
+
+    <section class="event-container" id="eventContainer">
+        <!-- Events load via JS -->
+    </section>
+
+    <!-- Booking Form -->
+    <div class="booking-form" id="bookingForm">
+        <h2>Book Your Ticket</h2>
+        <form id="form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email ID" required>
+            <input type="number" id="tickets" placeholder="Number of Tickets" min="1" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+        <button class="close-btn" onclick="closeForm()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
