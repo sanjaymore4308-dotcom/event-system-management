@@ -1,6 +1,6 @@
 // ✅ Expanded Event List (9 total)
 const events = [
-    { id: 1, name: "Music Festival", price: 500, image: "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" },
+    { id: 1, name: "Music Festival", price: 500, image: "https://www.lolavalentina.com/wp-content/uploads/2022/11/Lola_Minimalist-Blog-2.jpg" },
     { id: 2, name: "Dance Show", price: 300, image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" },
     { id: 3, name: "Comedy Night", price: 400, image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" },
     { id: 4, name: "Tech Expo", price: 200, image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085" },
@@ -62,3 +62,4 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
     closeForm();
 });
+
